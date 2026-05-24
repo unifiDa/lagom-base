@@ -122,6 +122,7 @@ nav {
   font-style: italic;
 }
 
+/*ridimensiona immagine*/
 .carousel-item img {
   height: 80vh;
   object-fit: cover;
@@ -149,7 +150,7 @@ nav {
 */
 
 /* Abstract geometric composition — bianco su nero */
-.geo-composition {
+/*.geo-composition {
   position: relative;
   width: 240px;
   height: 320px;
@@ -192,7 +193,7 @@ nav {
   border-radius: 50%;
   background: var(--white);
   opacity: 0.5;
-}
+}*/
 
 .hero-quote {
   font-family: var(--mono);
@@ -316,7 +317,7 @@ section {
 }
 
 /* ── PALETTE STRIP ── */
-.palette-strip {
+/*.palette-strip {
   display: flex;
   height: 120px;
   border-top: 1px solid var(--light-gray);
@@ -356,7 +357,7 @@ section {
 .swatch-5 span { color: var(--light-gray); }
 
 .swatch-6 { background: var(--black); }
-.swatch-6 span { color: var(--mid-gray); }
+.swatch-6 span { color: var(--mid-gray); }*/
 
 /* ── APPLICAZIONI ── */
 .applicazioni {
