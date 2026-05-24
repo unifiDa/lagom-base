@@ -19,6 +19,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/*aggiungere stack di font*/
 body {
   background-color: var(--white);
   color: var(--black);
@@ -128,72 +130,6 @@ nav {
   object-fit: cover;
 }
 
-/* non serve
-.hero-right {
-  position: relative;
-  background: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-*/
-/* non serve
-.hero-right-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  z-index: 2;
-}
-*/
-
-/* Abstract geometric composition — bianco su nero */
-/*.geo-composition {
-  position: relative;
-  width: 240px;
-  height: 320px;
-}
-
-.geo-rect-1 {
-  position: absolute;
-  top: 0; left: 40px;
-  width: 160px; height: 200px;
-  border: 1px solid var(--mid-gray);
-}
-
-.geo-rect-2 {
-  position: absolute;
-  top: 60px; left: 0;
-  width: 120px; height: 120px;
-  background: var(--white);
-  opacity: 0.06;
-}
-
-.geo-rect-3 {
-  position: absolute;
-  bottom: 0; right: 0;
-  width: 100px; height: 140px;
-  border: 1px solid rgba(247,245,240,0.2);
-}
-
-.geo-line {
-  position: absolute;
-  top: 50%; left: 0; right: 0;
-  height: 1px;
-  background: rgba(247,245,240,0.15);
-}
-
-.geo-dot {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--white);
-  opacity: 0.5;
-}*/
 
 .hero-quote {
   font-family: var(--mono);
@@ -316,122 +252,139 @@ section {
   color: var(--black);
 }
 
-/* ── PALETTE STRIP ── */
-/*.palette-strip {
-  display: flex;
-  height: 120px;
+
+/* style the container */
+.login-section {
+  padding: 0 0;
   border-top: 1px solid var(--light-gray);
-  border-bottom: 1px solid var(--light-gray);
+  font-family: var(--serif);
 }
 
-.palette-swatch {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem;
+
+form {
   position: relative;
-  overflow: hidden;
+  border-radius: 5px;
+  /*background-color: #f2f2f2;*/
+  padding: 20px 0 30px 0;
 }
 
-.palette-swatch span {
-  font-family: var(--mono);
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+/* style inputs and link buttons */
+input,
+.w3btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
 }
 
-.swatch-1 { background: var(--white); }
-.swatch-1 span { color: var(--light-gray); }
-
-.swatch-2 { background: var(--off-white); }
-.swatch-2 span { color: var(--light-gray); }
-
-.swatch-3 { background: var(--light-gray); }
-.swatch-3 span { color: var(--dark-gray); }
-
-.swatch-4 { background: var(--mid-gray); }
-.swatch-4 span { color: var(--off-white); }
-
-.swatch-5 { background: var(--dark-gray); }
-.swatch-5 span { color: var(--light-gray); }
-
-.swatch-6 { background: var(--black); }
-.swatch-6 span { color: var(--mid-gray); }*/
-
-/* ── APPLICAZIONI ── */
-.applicazioni {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border-top: 1px solid var(--light-gray);
+input:hover,
+.w3btn:hover {
+  opacity: 1;
 }
 
-.app-left {
-  padding: 6rem 4rem 6rem 3rem;
-  border-right: 1px solid var(--light-gray);
+.login-row {
+  position: relative;
 }
 
-.app-right {
-  padding: 6rem 3rem 6rem 4rem;
-  background: var(--black);
-  color: var(--white);
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
 }
 
-.app-title {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  line-height: 1.2;
+.twitter {
+  background-color: #55ACEE;
+  color: white;
 }
 
-.app-right .app-title {
-  color: var(--white);
+.google {
+  background-color: #dd4b39;
+  color: white;
 }
 
-.app-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.app-list li {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  font-size: 1rem;
-  color: var(--mid-gray);
-  padding-bottom: 1.2rem;
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.app-right .app-list li {
-  color: var(--mid-gray);
-  border-bottom-color: var(--dark-gray);
-}
-
-.app-list li::before {
-  content: '→';
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 300;
-  color: var(--light-gray);
-  flex-shrink: 0;
-}
-
-.app-right .app-list li::before {
+/* style the submit button */
+input[type=submit] {
+  background-color: var(--off-white);
   color: var(--dark-gray);
+  cursor: pointer;
 }
 
-.app-list li strong {
+input[type=submit]:hover {
+  background-color: var(--off-white);
   color: var(--black);
-  font-weight: 500;
 }
 
-.app-right .app-list li strong {
-  color: var(--white);
+/* Two-column layout */
+.login-col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
 }
+
+/* Clear floats after the columns */
+.login-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .login-col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
 
 /* ── FOOTER ──  da aggiustare il contrasto --light-gray è troppo chiaro\\*/  
 footer {
@@ -476,13 +429,9 @@ footer {
   nav { padding: 1.2rem 1.5rem; }
   .nav-links { display: none; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-left { padding: 4rem 1.5rem; border-right: none; border-bottom: 1px solid var(--light-gray); }
-  .hero-right { min-height: 50vh; }
+  .hero-left { padding: 4rem 1.5rem; border-right: none;}
   .principi-grid { grid-template-columns: 1fr; }
   .principio { border-right: none; border-bottom: 1px solid var(--light-gray); }
-  .applicazioni { grid-template-columns: 1fr; }
-  .app-left { border-right: none; border-bottom: 1px solid var(--dark-gray); padding: 4rem 1.5rem; }
-  .app-right { padding: 4rem 1.5rem; }
   section { padding: 5rem 1.5rem; }
   .manifesto { padding: 6rem 1.5rem; }
   footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.5rem; }

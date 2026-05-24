@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -101,7 +102,7 @@
     </section>
 
     <!-- MANIFESTO -->
-    <div class="manifesto" id="manifesto">
+    <section class="manifesto" id="manifesto">
       <p class="manifesto-intro">Manifesto / Lagom</p>
       <p class="manifesto-body">
         Il bello che dura non grida. Non seduce con il colore né abbaglia con la decorazione.
@@ -109,32 +110,42 @@
         non ha bisogno di essere notato — <strong>ha bisogno solo di essere giusto.</strong>
         Lagom non è mediocrità. È la massima ambizione ridotta all'essenziale.
       </p>
-    </div>
+    </section>
 
     <!-- APPLICAZIONI -->
-    <div class="applicazioni" id="applicazioni">
-      <div class="app-left">
-        <h2 class="app-title">Sul bianco</h2>
-        <ul class="app-list">
-          <li><strong>Purezza formale</strong> — la struttura si vede senza distrazione.</li>
-          <li><strong>Fragilità intenzionale</strong> — il bianco si sporca, invecchia, racconta il tempo.</li>
-          <li><strong>Luce riflessa</strong> — cambia con l'ora del giorno, non è mai lo stesso.</li>
-          <li><strong>Spazio mentale</strong> — crea respiro, distanza, calma cognitiva.</li>
-          <li><strong>Inverno scandinavo</strong> — neve, ghiaccio, nebbia mattutina: il bianco come natura.</li>
-        </ul>
-      </div>
+    <section class="login-section" id="applicazioni">
+      <form action="/action_page.php">
+        <div class="login-row">
+          <h2 style="text-align:center">Accedi tramite Social Media o Manualmente</h2>
+          <div class="vl">
+            <span class="vl-innertext">oppure</span>
+          </div>
 
-      <div class="app-right">
-        <h2 class="app-title">Sul nero</h2>
-        <ul class="app-list">
-          <li><strong>Protezione</strong> — avvolge, isola, crea un confine col mondo esterno.</li>
-          <li><strong>Silenzio visivo</strong> — assorbe tutto, non riflette nulla.</li>
-          <li><strong>Democratico</strong> — si adatta a ogni corpo, ogni contesto, ogni luce.</li>
-          <li><strong>Onestà protestante</strong> — nessuna ornamentazione, nessuna finzione.</li>
-          <li><strong>Comfort nordico</strong> — il nero del hygge: caldo, denso, familiare.</li>
-        </ul>
-      </div>
-    </div>
+          <div class="login-col">
+            <a href="#" class="fb w3btn">
+              <i class="fa-brands fa-facebook fa-fw"></i> Login con Facebook
+            </a>
+            <a href="#" class="twitter w3btn">
+              <i class="fa-brands fa-twitter fa-fw"></i> Login con Twitter
+            </a>
+            <a href="#" class="google w3btn"><i class="fa-brands fa-google fa-fw">
+              </i> Login con Google+
+            </a>
+          </div>
+
+          <div class="login-col">
+            <div class="hide-md-lg">
+              <p>Oppure accedi manualmente:</p>
+            </div>
+
+            <input type="text" name="username" placeholder="utente" required>
+            <input type="password" name="password" placeholder="password" required>
+            <input type="submit" value="Login">
+          </div>
+
+        </div>
+      </form>
+    </section>
   </main>
 
   <!-- FOOTER -->
