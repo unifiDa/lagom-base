@@ -19,8 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-/*aggiungere stack di font*/
 body {
   background-color: var(--white);
   color: var(--black);
@@ -386,7 +384,7 @@ input[type=submit]:hover {
 }
 
 
-/* ── FOOTER ──  da aggiustare il contrasto --light-gray è troppo chiaro\\*/  
+/* ── FOOTER ──  da aggiustare il contrasto --light-gray è troppo chiaro*/
 footer {
   padding: 3rem;
   border-top: 1px solid var(--light-gray);
